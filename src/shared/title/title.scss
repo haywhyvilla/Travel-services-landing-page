@@ -1,0 +1,43 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.title {
+  &--main {
+    font-size: $heading-xl;
+    font-weight: 700;
+    color: $primary-colours-400;
+    margin-bottom: 2.2rem;
+    line-height: 5rem;
+
+    @include respond(tab-port) {
+      padding-top: 4rem;
+      font-size: $heading-lg;
+      text-align: center;
+    }
+  }
+
+  &--small {
+    font-size: $heading-lg;
+    color: $primary-colours-300;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+
+    @include respond(tab-port) {
+      text-align: center;
+      margin-bottom: 1.0rem;
+      font-size: $heading-lg;
+    }
+  }
+
+  &--sub {
+    font-size: $heading-md;
+    font-weight: 400;
+    line-height: 3rem;
+    color: $color-black;
+
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,259 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+footer {
+    // @include respond(tab-port) {
+    //   padding-top: 5rem;
+    // }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 6rem;
+
+        @include respond(desktop) {
+            padding-left: 0rem;
+
+        }
+
+        .logo {
+            display: block;
+
+            @include respond(tab-port) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .socialhandles {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .social {
+            margin-top: 3rem;
+
+            @include respond(tab-port) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: auto;
+                align-items: center;
+                margin-top: 3rem;
+            }
+
+            .socials:not(:first-child) {
+                margin-left: 2rem;
+
+            }
+        }
+
+        .inputgrid {
+
+            @include respond(tab-port) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0.2rem;
+            }
+
+            .form {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 2rem;
+
+                @include respond(tab-port) {
+                    width: max-content;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .forminput {
+                    min-width: 70%;
+                    padding: 1.4rem 1rem;
+                }
+            }
+        }
+
+        .foothead {
+            color: #1e1e1e;
+            // font-family: Raleway;
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 700;
+            // line-height: 120%;
+        }
+
+
+        .nav {
+            display: block;
+            margin-top: 2rem;
+
+            @include respond(tab-port) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-size: $heading-md;
+            font-weight: 500;
+            color: $primary-colours-100;
+            margin-right: 3.2rem;
+            cursor: pointer;
+
+            @include respond(tab-port) {
+
+                margin-bottom: 1rem;
+            }
+        }
+
+
+        .subscribe {
+            display: flex;
+            flex-direction: row;
+            margin: 2rem auto;
+
+            @include respond(phone) {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+    }
+
+    .linkgrid {
+        margin-top: 1rem;
+
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .contact {
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-size: $heading-md;
+            font-weight: 500;
+            color: $color-black;
+            cursor: pointer;
+        }
+    }
+
+    .otherlink {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+
+        a {
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-size: $heading-md;
+            font-weight: 500;
+            color: $color-black;
+            cursor: pointer;
+
+            @include respond(tab-port) {
+                text-align: center;
+            }
+
+        }
+    }
+
+    .footparagraph {
+
+        color: #757095;
+        font-size: $heading-md;
+        font-weight: 500;
+        font-family: 'Manrope', sans-serif;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+
+    }
+
+
+    .heading {
+        color: #181433;
+        font-family: 'Manrope', sans-serif;
+        font-size: $heading-lg;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .otherlink {
+        a {
+            color: #181433;
+            font-family: 'Manrope', sans-serif;
+            font-size: $heading-md;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+
+    .forminput {
+        padding: 1.6rem;
+        border-radius: 0.4rem;
+        background-color: #EEF;
+        outline: none;
+        border: none;
+        width: 60%;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 3.2rem;
+        }
+    }
+
+
+}
+
+
+.thinline {
+    background-color: #E5E5EA;
+    width: 85%;
+    height: 0.1rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+        margin-left: 2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+.foot {
+    margin-left: 12rem;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+
+    p {
+        text-align: center;
+        color: #181433;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    @include respond(tab-port) {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+}

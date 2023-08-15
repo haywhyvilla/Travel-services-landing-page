@@ -1,0 +1,159 @@
+@import "../../scss/mixins";
+@import "../../scss//variables";
+
+
+.sponsors {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-bg-input;
+    padding: 7.5rem 17rem;
+    margin-bottom: 25rem;
+
+    @include respond(desktop) {
+        display: none;
+        margin-bottom: 5rem;
+    }
+}
+
+.topcenter {
+    text-align: center;
+    color: $primary-colours-500;
+    font-size: $heading-md;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+        margin-top: 5rem;
+    }
+}
+
+
+.category {
+
+
+    h2 {
+        text-align: center;
+    }
+
+    .categories {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(tab-port) {
+            display: block;
+        }
+
+
+        .centre {
+            @include respond(tab-port) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+
+
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17rem;
+
+
+    @include respond(tab-port) {
+        display: block;
+    }
+}
+
+.herotitle {
+    margin-top: 10vh;
+    padding: 16rem 0;
+
+    @include respond(tab-port) {
+        margin-top: 2rem;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+// .heroimageMobile {
+//   display: none;
+//   @include respond(tab-port) {
+//     display: block;
+//     margin-top: 15vh;
+//   }
+// }
+
+
+.topleft {
+    color: $primary-colours-500;
+    font-size: $heading-md;
+    font-weight: 600;
+
+    @include respond(tab-port) {
+        align-items: center;
+    }
+
+}
+
+
+
+.heroimage {
+    margin-top: 0;
+
+    @include respond(tab-port) {
+        display: none;
+        margin-top: -10vh;
+        height: 80%;
+    }
+
+
+    @include respond(desktop) {
+        height: 60%;
+    }
+
+}
+
+// .heroimageMobile {
+//   display: none;
+//   @include respond(tab-port) {
+//     display: block;
+//     margin-top: 15vh;
+//   }
+// }
+
+.button {
+    display: block;
+
+    @include respond(tab-port) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.love {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+}

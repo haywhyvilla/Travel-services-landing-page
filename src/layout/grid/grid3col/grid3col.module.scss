@@ -1,0 +1,11 @@
+@import "../../../scss/mixins";
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10rem;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
