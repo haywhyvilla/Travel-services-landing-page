@@ -1,4 +1,4 @@
-## Settings Page Design Test
+## Travel-service-landing-page Design Test
 This repository contains my solution to the "Travel-service-landing-page Design Test" using React.
 
 ## Design Details
